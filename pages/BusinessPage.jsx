@@ -48,7 +48,7 @@ export const BusinessPage = () => {
         setIsLoading(true);
         setError(null);
         try {
-            // Generic text tools (legacy fallback)
+
             const res = await generateBusinessContent(activeTool.title, formData);
             setResult(res);
         } catch (e) {
